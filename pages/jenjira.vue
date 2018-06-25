@@ -1,5 +1,5 @@
 <template>
-  <div><h1><center>Page Login<center></h1>
+  <div><h1><center>Page Login</center></h1>
     <v-form v-model="valid">
       <v-text-field
         v-model="name"
