@@ -14,6 +14,18 @@
 
 <script>
 export default {
+  data() {
+    return {
+      items: [
+         { title: 'Home', icon: 'home', url: '/' },
+         { title: 'Room', icon: 'update', url: '/table' },
+         { title: 'Booking', icon: 'assignment_turned_in', url: '/booking' },
+         { title: 'Chat', icon: 'group', url: '/chat' },
+         { title: 'key', icon: 'security', url: '/keyroom' },
+         { title: 'Logout', icon: 'lock', url: '/Logout' },
+       ],
+     }
+  },
   computed: {
     online: {
       get() {
