@@ -20,6 +20,7 @@
 </template>
 <script>
 export default {
+  layout:"public",
   data() {
     return {
       id: 1,
