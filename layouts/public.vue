@@ -34,7 +34,6 @@ export default {
          { title: 'Booking', icon: 'assignment_turned_in', url: '/booking' },
          { title: 'Chat', icon: 'group', url: '/chat' },
          { title: 'key', icon: 'security', url: '/keyroom' },
-         { title: 'Logout', icon: 'lock', url: '/Logout' },
        ],
      }
   },
