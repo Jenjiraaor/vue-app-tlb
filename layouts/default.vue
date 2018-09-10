@@ -12,8 +12,8 @@
           </v-list-tile>
         </v-list>
         </v-navigation-drawer>
-    <v-toolbar app>
-      <v-toolbar-title>VueApp</v-toolbar-title>
+    <v-toolbar app class=pink accent-3>
+      <v-toolbar-title>ระบบฐานข้อมูลห้องสมุด</v-toolbar-title>
       <v-spacer/>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"/>
     </v-toolbar>

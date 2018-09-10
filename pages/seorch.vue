@@ -1,29 +1,15 @@
 <template>
-  <v-form v-model="valid">
-    <v-text-field
-      v-model="email"
-      :rules="emailRules"
-      label="E-mail"
-      required
-    ></v-text-field>
-    <v-text-field
-        v-model="password"
-        :append-icon="show1 ? 'visibility_off' : 'visibility'"
-        :rules="[rules.required, rules.min]"
-        :type="show1 ? 'text' : 'password'"
-        name="input-10-1"
-        label="Password"
-        hint="At least 8 characters"
-        counter
-        @click:append="show1 = !show1"
-    ></v-text-field>
-     <v-btn color="primary" dark @click="Dologin">เข้าสู่ระบบ
+  <center><v-form v-model="valid">
+    <v-flex xs12 sm6 md3>
+          <v-text-field
+            label=""
+            solo
+          ></v-text-field>
+        </v-flex>
+     <v-btn color="primary" dark @click="Dologin">ค้นหา
         <v-icon dark right>label</v-icon>
       </v-btn>
-      <v-btn color="success" dark @click="Dosave">ล้างข้อมูล
-        <v-icon dark right>label</v-icon>
-      </v-btn>
-  </v-form>
+  </v-form></center>
 </template>
 <script>
   export default {

@@ -20,7 +20,7 @@
      <v-btn color="primary" dark @click="Dologin">เข้าสู่ระบบ
         <v-icon dark right>label</v-icon>
       </v-btn>
-      <v-btn color="success" dark @click="Dosave">ล้างข้อมูล
+      <v-btn color="success" dark @click="Doclean">ล้างข้อมูล
         <v-icon dark right>label</v-icon>
       </v-btn>
   </v-form>
@@ -51,10 +51,10 @@
           pass : this.password
         })
         if (res.data.ok){
-          this.$router.push('/table')
+          this.$router.push('/search.1')
         }
       },
-      Dosave(){
+      Doclean(){
         this.email='',
         this.password=''
       }

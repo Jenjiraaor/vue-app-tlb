@@ -20,7 +20,7 @@
      <v-btn color="primary" dark @click="Dologin">เข้าสู่ระบบ
         <v-icon dark right>label</v-icon>
       </v-btn>
-      <v-btn color="success" dark @click="Dosave">ล้างข้อมูล
+      <v-btn color="success" dark @click="Doclean">ล้างข้อมูล
         <v-icon dark right>label</v-icon>
       </v-btn>
   </v-form>
@@ -46,15 +46,15 @@
       async Dologin(){
         console.log (this.email)
         console.log (this.password)
-        let res = await this.$http.post('http://127.0.0.1/php_test/login.php', {
+        let res = await this.$http.post('http://127.0.0.1/php_library/login.php', {
           user : this.email,
           pass : this.password
         })
         if (res.data.ok){
-          this.$router.push('/table')
+          this.$router.push('/search.2')
         }
       },
-      Dosave(){
+      Doclean(){
         this.email='',
         this.password=''
       }
